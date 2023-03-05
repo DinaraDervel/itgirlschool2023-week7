@@ -1,0 +1,142 @@
+.container {
+  height: 100vh;
+
+  display: grid;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.header,
+.footer {
+  background-color: rgb(223, 223, 244);
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+
+  background-color: beige;
+}
+
+.main-part {
+  grid-area: main-part;
+}
+.more1,
+.more2,
+.more3 {
+  margin: 10px;
+  background-color: rgb(249, 195, 114);
+}
+.more1 {
+  grid-area: more1;
+}
+.more2 {
+  grid-area: more2;
+}
+.more3 {
+  grid-area: more3;
+}
+
+.sidebar {
+  grid-area: sidebar;
+
+  background-color: rgb(148, 245, 148);
+}
+
+.footer {
+  grid-area: footer;
+
+  display: flex;
+}
+.footer-section {
+  margin: 10px auto;
+
+  background-color: white;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10% 1fr 20%;
+    grid-template-areas:
+      "header header"
+      "main  sidebar"
+      "footer footer";
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+      "main-part main-part"
+      "more1 more2"
+      "more3 more3";
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  .footer-section {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 2fr 1fr 20%;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+      "main-part main-part"
+      "more1 more2"
+      "more3 more3";
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  .footer-section {
+    width: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 2fr 1fr 30%;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "main-part"
+      "more1"
+      "more2"
+      "more3";
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-section {
+    width: 90%;
+  }
+}
