@@ -1,0 +1,430 @@
+/*figma template - https://www.figma.com/file/sZ5B0pU90GzVSltnlgnbpp/Free-Portfolio-Website-UI-(Community)?node-id=1%3A2&t=IHilmWtwhrlMae1l-1*/
+body {
+    background-color: black;
+  }
+
+  /*Header*/
+  .header {
+    height: 120px;
+    margin: 0 auto 60px auto;
+    width: 85%;
+
+    display: flex;
+    align-items: end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .logo a {
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .menu a {
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  /*Home*/
+  .home {
+    min-height: 900px;
+    margin-bottom: 180px;
+
+    display: grid;
+    grid-template-columns: 36% 14% 2% 16% 32%;
+    grid-template-rows: 17.2% 20.7% 24.2% 17.2% 20.7%;
+  }
+  .home p {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 110px;
+
+    color: #ffffff;
+  }
+  .home #home-image1 {
+    grid-column-end: 6;
+    grid-row: 1/4;
+
+    background-image: url("../images/main_image1.jpg");
+    background-position: top left;
+    background-size: cover;
+  }
+  .home #home-image2 {
+    grid-column: 1/2;
+    grid-row: 3/6;
+
+    background-image: url("../images/main_image2.jpg");
+    background-position: top right;
+    background-size: cover;
+  }
+  .home #bigheader {
+    grid-column: 1/6;
+    grid-row: 2/5;
+    max-width: 100%;
+  }
+  .home h1 {
+    margin: 0;
+    font-family: "Playfair Display", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 309px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .home h2 {
+    margin-top: -90px;
+
+    font-family: "Playfair Display", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 284px;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #ffffff;
+  }
+  .home button {
+    grid-column: 3/5;
+    grid-row: 5/6;
+    align-self: center;
+
+    width: 100%;
+    height: 35%;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+
+    color: #000000;
+  }
+
+  /*Header h3*/
+  h3 {
+    margin: 0;
+    text-align: center;
+    font-family: "Playfair Display", Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 81.3081px;
+
+    color: #ffffff;
+  }
+
+  /*Portfolio*/
+  .portfolio {
+    width: 80%;
+    min-height: 3000px;
+    margin: 0 auto 360px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6% 22% 12% 30% 8% 22%;
+    gap: 50px;
+  }
+  .portfolio h3 {
+    grid-area: 1/1/2/3;
+    align-self: end;
+  }
+  .portfolio #portfolio-image1 {
+    grid-area: 2/1/4/2;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio #portfolio-image2 {
+    grid-area: 2/2/3/3;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio #portfolio-image3 {
+    grid-area: 4/1/5/2;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio #portfolio-image4 {
+    grid-area: 3/2/6/3;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio #portfolio-image5 {
+    grid-area: 5/1/7/2;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio #portfolio-image6 {
+    grid-area: 6/2/7/3;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*About*/
+  .about {
+    width: 85%;
+    min-height: 1020px;
+    margin: 0 auto 300px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 18% 35% 47%;
+    gap: 50px;
+  }
+  .about h3 {
+    grid-area: 1/1/2/3;
+    align-self: end;
+  }
+  .about #about-p1 {
+    grid-area: 2/1/3/2;
+  }
+  .about #about-p2 {
+    grid-area: 3/1/4/2;
+    margin: 0;
+  }
+  .about #about-p1,
+  .about #about-p2 {
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #ffffff;
+  }
+  .about #about-image {
+    grid-area: 2/2/4/3;
+
+    width: 100%;
+  }
+
+  /*Testimonials*/
+  .testimonials {
+    width: 76%;
+    min-height: 1000px;
+    margin: 0 auto 360px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10% 15% 30% 30% 15%;
+    gap: 50px;
+  }
+  .testimonials h3 {
+    grid-area: 1/1/2/3;
+    align-self: end;
+  }
+  #testimonials-p {
+    grid-area: 2/1/3/3;
+    align-self: start;
+    width: 75%;
+    justify-self: center;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  #testimonial1 {
+    grid-area: 3/1/4/2;
+
+    display: flex;
+    align-items: center;
+  }
+  #testimonials-image1 {
+    max-width: 309px;
+  }
+
+  #testimonial2 {
+    grid-area: 4/1/5/2;
+
+    display: flex;
+    align-items: center;
+  }
+  #testimonials-image2 {
+    max-width: 309px;
+  }
+
+  #testimonial3 {
+    grid-area: 3/2/5/3;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #testimonials-image3 {
+    max-width: 309px;
+  }
+
+  .testimonial-section {
+    background-color: #181818;
+    min-height: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .testimonial-section3 {
+    min-height: 362px;
+  }
+  .testimonial-section h4 {
+    margin: 0;
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+
+    color: #ffffff;
+  }
+  .testimonial-section p {
+    max-width: 290px;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+  .testimonial-section a {
+    text-decoration: none;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: right;
+
+    color: #ffffff;
+  }
+
+  #see-all-reviews {
+    grid-area: 5/1/6/3;
+    width: 220px;
+    height: 50%;
+    justify-self: center;
+    align-self: end;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.778px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #ffffff;
+  }
+  /*Contact*/
+  .contact {
+    min-height: 900px;
+    width: 60%;
+    margin: 0 auto 420px auto;
+  }
+  .contact label {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44.7477px;
+    line-height: 54px;
+
+    color: #ffffff;
+  }
+  .input-area {
+    width: 100%;
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #bbbbbb;
+
+    background-color: #000000;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    resize: none;
+  }
+  input[type="submit"] {
+    width: 187.84px;
+    height: 72.14px;
+    margin-top: 120px;
+
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38.4067px;
+    line-height: 46px;
+
+    color: #000000;
+    background: #ffffff;
+  }
+
+  /*Footer*/
+  .footer {
+    min-height: 120px;
+  }
+  .footer p {
+    font-family: "Inter", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .footer ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 28%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .footer a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+
+    text-decoration: none;
+    color: #ffffff;
+  }
