@@ -556,8 +556,8 @@ input[type="submit"] {
   }
   .about #about-p1,
   .about #about-p2 {
-    font-size: clamp(18px, 8cqw, 34px);
-    line-height: clamp(20px, 11cqw, 36px);
+    font-size: clamp(18px, 8vw, 34px);
+    line-height: clamp(20px, 11vw, 36px);
   }
   .testimonials {
     width: 90%;
